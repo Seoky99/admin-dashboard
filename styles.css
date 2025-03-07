@@ -20,7 +20,7 @@ body {
 }
 
 .sidebar {
-    background-color: red;
+    background-color: #233C67;
     grid-area: 1 / 1 / 3 / 2;
 } 
 
@@ -30,7 +30,7 @@ body {
     gap: 2rem;
     align-items: center;
     color: white; 
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 10%;
     & div {
         flex: 1;
@@ -45,12 +45,52 @@ body {
     }
 }
 
-
-
-
 .header {
-    background-color: blue;
+    background-color: white;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2fr;
+
+    & > div {
+        display: flex;
+        padding: 10px;
+    }
+
+    & > div > .header-left {
+        flex: 2; 
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 5%;
+        padding-right: 10%;
+    }
+
+    & > div > .header-right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+        margin-right: 10%;
+    }
+}
+
+.header-left button {
+    padding: 5px 5px;
+}
+
+.header-right button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #233C67;
+    color: white;
+}
+
+input {
+    width: 25rem;
+    padding: 5px;
+    margin-right: 5px;
 }
 
 .main-container {
